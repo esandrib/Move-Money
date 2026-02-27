@@ -1,0 +1,133 @@
+export interface Initiative {
+  id: string;
+  name: string;
+  category: string;
+  totalCost: number | null;
+  owner: string;
+  status: string;
+  priority: string;
+  description: string;
+}
+
+export const initiatives: Initiative[] = [
+  {
+    id: "INI-001",
+    name: "Payment Gateway Migration",
+    category: "Technology",
+    totalCost: 450000,
+    owner: "Engineering",
+    status: "In Progress",
+    priority: "High",
+    description: "Migrate from legacy payment processor to modern API gateway",
+  },
+  {
+    id: "INI-002",
+    name: "Fraud Detection Enhancement",
+    category: "Risk & Compliance",
+    totalCost: 320000,
+    owner: "Risk",
+    status: "Planning",
+    priority: "Critical",
+    description: "Implement ML-based real-time fraud detection pipeline",
+  },
+  {
+    id: "INI-003",
+    name: "Customer Onboarding Automation",
+    category: "Operations",
+    totalCost: 180000,
+    owner: "Product",
+    status: "In Progress",
+    priority: "High",
+    description: "Automate KYC and onboarding workflows to reduce time-to-activate",
+  },
+  {
+    id: "INI-004",
+    name: "FX Hedging Strategy",
+    category: "Finance",
+    totalCost: 95000,
+    owner: "Treasury",
+    status: "Under Review",
+    priority: "Medium",
+    description: "Implement dynamic FX hedging for cross-border transaction exposure",
+  },
+  {
+    id: "INI-005",
+    name: "Open Banking API Integration",
+    category: "Technology",
+    totalCost: 560000,
+    owner: "Engineering",
+    status: "Planning",
+    priority: "High",
+    description: "Build PSD2-compliant open banking APIs for third-party access",
+  },
+  {
+    id: "INI-006",
+    name: "Core Banking System Upgrade",
+    category: "Technology",
+    totalCost: 1250000,
+    owner: "IT",
+    status: "Planning",
+    priority: "Critical",
+    description: "Upgrade core banking platform to support real-time processing",
+  },
+  {
+    id: "INI-007",
+    name: "AML Monitoring Refresh",
+    category: "Risk & Compliance",
+    totalCost: 275000,
+    owner: "Compliance",
+    status: "In Progress",
+    priority: "Critical",
+    description: "Replace legacy AML monitoring with tunable rules engine",
+  },
+  {
+    id: "INI-008",
+    name: "Digital Wallet Launch",
+    category: "Product",
+    totalCost: 720000,
+    owner: "Product",
+    status: "Planning",
+    priority: "High",
+    description: "Launch consumer digital wallet with NFC and QR payment support",
+  },
+  {
+    id: "INI-009",
+    name: "Treasury Cash Forecasting",
+    category: "Finance",
+    totalCost: 135000,
+    owner: "Treasury",
+    status: "Under Review",
+    priority: "Medium",
+    description: "Implement 30/60/90-day cash flow forecasting dashboard",
+  },
+  {
+    id: "INI-010",
+    name: "ISO 20022 Migration",
+    category: "Risk & Compliance",
+    totalCost: 410000,
+    owner: "Compliance",
+    status: "Planning",
+    priority: "High",
+    description: "Migrate SWIFT messaging to ISO 20022 standard by regulatory deadline",
+  },
+  {
+    id: "INI-011",
+    name: "Merchant Portal Redesign",
+    category: "Product",
+    totalCost: 215000,
+    owner: "Product",
+    status: "In Progress",
+    priority: "Medium",
+    description: "Redesign merchant self-service portal with real-time analytics",
+  },
+  {
+    id: "INI-012",
+    name: "Cloud Infrastructure Migration",
+    category: "Technology",
+    totalCost: 890000,
+    owner: "IT",
+    status: "In Progress",
+    priority: "High",
+    description: "Migrate on-premise workloads to AWS multi-region architecture",
+  },
+];
